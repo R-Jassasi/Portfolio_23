@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => { //fixed why the scrolling didn't work || Check DOM Content Ready: If your script is executed before the DOM is fully loaded, the carousel variable may not reference the correct element.
 
 
-//horizontal slider
+//horizontal slider from chatGPT
 const carousel = document.querySelector('.carousel-container');
 const scrollSpeed = 10; // Adjust scroll speed as needed
 
@@ -62,7 +62,7 @@ function animateScroll(element, amount) {
 
 
 
-//text animation
+//text animation - code snippet
 function animate(options) {
 
   var start = performance.now();
