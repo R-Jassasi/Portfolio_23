@@ -50,6 +50,47 @@ button {
   margin-top: 10px;
 }
 
+/*Styling link*/
+/* Style regular links */
+a {
+  color: #040F1E; /* Change link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Style visited links */
+a:visited {
+  color: #040F1E; /* Change color of visited links */
+}
+
+/* Style hovered links */
+a:hover {
+  color: #9E6240; /* Change color when hovered */
+  text-decoration: none; /* Add underline on hover */
+}
+
+/* Style active links */
+a:active {
+  color: rgb(71, 124, 71); /* Change color when clicked */
+  text-decoration: none; /* Remove underline */
+}
+
+/*hover highlight animation https://www.youtube.com/watch?v=3VQr2r0z-ZM&ab_channel=NetNinja*/
+.highlight{
+  display: inline-block;
+  cursor: pointer;
+  background-image: linear-gradient(#BBD686,#BBD686);
+  background-repeat: no-repeat;
+  background-size: 10px 100%;
+  background-position: 0 0;
+  transition: background-position 0.3s ,background-size 0.5s;
+}
+
+.highlight:hover{
+  background-size: 100% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.3s ,background-size 0.2s 0.3s;
+
+}
 
 /*horizontal slider from chatGPT*/
 /* Solid border */
