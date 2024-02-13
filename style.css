@@ -9,6 +9,36 @@
   margin: auto;
 } */
 
+/* Import the custom font */
+@font-face {
+  font-family: 'Kollektif'; /* Name of the font */
+  src: url('./src/font/Kollektif.ttf') format('ttf'); /* Path to the font file */
+  font-weight: normal; /* Specify the font weight */
+
+}
+@font-face {
+  font-family: 'Kollektif'; /* Name of the font */
+  src: url('./src/font/Kollektif-Bold.ttf') format('ttf'); /* Path to the font file */
+  font-weight: bold; /* Specify the font weight */
+
+}
+
+/* Apply the custom font to specific elements */
+h1, p {
+  font-family: 'Kollektif', sans-serif; /* Use the custom font */
+  font-weight: normal;
+}
+
+.font_bold{
+  font-family: 'Kollektif', sans-serif; /* Use the custom font */
+  font-weight: bold;
+}
+
+
+body{
+  cursor: url('./src/icons8-cat.gif'), auto; /* Use custom cursor image */
+}
+
 textarea {
   display: block;
   border: 1px solid #BBB;
@@ -44,5 +74,5 @@ hr.solid {
   width: 300px; /* Set width of each item */
   height: 400px; /* Set height of each item */
   margin: 0 20px; /* Add margin between items */
-  background-color: rgb(66, 255, 107);
+  background-color: rgb(193, 226, 155);
 }
