@@ -1,0 +1,28 @@
+/* Import the custom font */
+@font-face {
+  font-family: 'Kollektif'; /* Name of the font */
+  src: url('./src/font/Kollektif.ttf') format('ttf'); /* Path to the font file */
+  font-weight: normal; /* Specify the font weight */
+
+}
+@font-face {
+  font-family: 'Kollektif'; /* Name of the font */
+  src: url('./src/font/Kollektif-Bold.ttf') format('ttf'); /* Path to the font file */
+  font-weight: bold; /* Specify the font weight */
+
+}
+
+.font_bold{
+  font-family: 'Kollektif', sans-serif; /* Use the custom font */
+  font-weight: bold;
+}
+
+body{
+  cursor: url('./src/icons8-cat.gif'), auto; /* Use custom cursor image */
+}
+
+/* Apply the custom font to specific elements */
+h1,h2,h3,p, .font{
+  font-family: 'Kollektif', sans-serif; /* Use the custom font */
+  font-weight: normal;
+}
