@@ -82,6 +82,7 @@ body {
     z-index: 0;
 }
 
+/*______________ Desktop Icons______________*/
 .icons-text {
     display: flex;
     flex-direction: column;
@@ -113,7 +114,7 @@ body {
     color: white;
 }
 
-/*_________________ TOOLTIP______________*/
+/*______________ TOOLTIP______________*/
 
 /* tooltip from w3schools.com*/
 /* Tooltip container */
