@@ -83,3 +83,26 @@ function animate(options) {
 
   });
 }
+
+
+//real-time clock from chatGPT
+function updateClock() {
+  const now = new Date(); // Get the current date and time
+  let hours = now.getHours(); // Get the current hour (0-23)
+  const minutes = now.getMinutes(); // Get the current minute (0-59)
+  
+  // Determine if it's AM or PM
+  const amPm = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert hours to 12-hour format
+  hours = hours % 12 || 12;
+
+  // Format the time as HH:MM AM/PM
+  const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${amPm}`;
+
+  // Update the content of the clock element with the current time
+  document.getElementById('clock').textContent = timeString;
+}
+
+// Call updateClock function every second to update the time
+setInterval(updateClock, 1000);
