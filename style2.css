@@ -26,8 +26,13 @@
 }
 
 body {
-    cursor: url('./src/icons8-cat.gif'), auto;
+    cursor: url('./src/cat.gif'), auto;
     /* Use custom cursor image */
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrollbars */
 }
 
 /* Apply the custom font to specific elements */
@@ -39,14 +44,6 @@ p,
     font-family: 'Kollektif', sans-serif;
     /* Use the custom font */
     font-weight: normal;
-}
-
-/* Apply background image to the body */
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* Prevent scrollbars */
 }
 
 .content {
