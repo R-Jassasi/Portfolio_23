@@ -106,3 +106,30 @@ function updateClock() {
 
 // Call updateClock function every second to update the time
 setInterval(updateClock, 1000);
+
+
+// JavaScript to handle popup functionality - from chatGPT
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all popup triggers
+  const popupTriggers = document.querySelectorAll('.popup-trigger');
+
+  // Attach click event listener to each popup trigger
+  popupTriggers.forEach(function (trigger) {
+      trigger.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default link behavior
+
+          // Get the target popup modal ID
+          const targetId = this.getAttribute('data-target');
+          const targetModal = document.getElementById(targetId);
+
+          // Show the target popup modal
+          targetModal.style.display = 'block';
+
+          // Close button functionality
+          const closeButton = targetModal.querySelector('.close-btn');
+          closeButton.addEventListener('click', function () {
+              targetModal.style.display = 'none';
+          });
+      });
+  });
+});
