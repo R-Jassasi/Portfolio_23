@@ -29,7 +29,7 @@
 }
 
 body{
-  cursor: url('./src/icons8-cat.gif'), auto; /* Use custom cursor image */
+  cursor: url('./src/cat-hand.cur'), auto; /* Use custom cursor image */
 }
 
 /* Apply the custom font to specific elements */
