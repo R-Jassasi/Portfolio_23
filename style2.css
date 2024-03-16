@@ -95,14 +95,35 @@ body {
     top: 20px; /* Adjust the distance from the top edge */
     width: 100px;  /* Adjust the width as needed */
 }
+.icons-text-window {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    /*left: 20px; /* Adjust the distance from the right edge */
+    /*top: 70px; /* Adjust the distance from the top edge */
+    width: 100px;  /* Adjust the width as needed */
+}
 
 .icons-text:hover{
     background-color: rgba(0, 0, 0, 0.445);
+}
 
+.icons-text-window:hover{
+    background-color: rgba(0, 0, 0, 0.445);
 }
 
 /* Style the icon */
 .icons-text img {
+    width: 100px;   /* Adjust the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.icons-text-window img {
     width: 100px;   /* Adjust the size of the icon */
     height: auto; /* Maintain aspect ratio */
 }
@@ -114,6 +135,21 @@ body {
     color: white;
 }
 
+.icons-text-window span {
+    margin-top: 10px;  /* Adjust spacing between the icon and text */
+    font-size: 20px;  /* Adjust font size as needed */
+    color: black;
+}
+
+/*wrap contents in the div*/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 /*______________ TOOLTIP______________*/
 
 /* tooltip from w3schools.com*/
@@ -121,7 +157,6 @@ body {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
   }
   
 .tooltip .tooltiptext {
@@ -132,7 +167,6 @@ body {
     font-family: 'Kollektif', sans-serif;
     font-weight: normal;    
     text-align: center;
-    border-radius: 6px;
     margin-bottom: 10px;
     padding: 5px 0;
     
