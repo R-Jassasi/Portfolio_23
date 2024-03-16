@@ -263,7 +263,8 @@ footer .icons{
 }
 
 footer .icon {
-    width: 30px !important; ;
+    width: 30px !important; 
+    height:30px;
     padding: 0 10px; /* Adjust padding as needed */
     
 }
