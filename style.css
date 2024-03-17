@@ -157,9 +157,9 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 textarea {
   display: block;
-  border: 1px solid #BBB;
+  border: none;
   color: #444;
-  font-size: 110%;
+  font-size: 23px;
 }
 
 button {

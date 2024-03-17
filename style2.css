@@ -38,6 +38,13 @@ a,
     text-decoration: none;
 }
 
+textarea {
+    display: block;
+    border: none;
+    color: #345678;
+    font-size: 110%;
+}
+
 body {
     cursor: url('./src/cat-hand.cur'), auto;
     /* Use custom cursor image */
