@@ -19,7 +19,7 @@ body {
     margin: 0
 }
 
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -31,7 +31,7 @@ menu,
 nav,
 section {
     display: block
-}
+} */
 
 summary {
     display: list-item
@@ -217,7 +217,7 @@ textarea {
 }
 
 /* End extract */
-html,
+/* html,
 body {
     font-family: Verdana, sans-serif;
     font-size: 15px;
@@ -250,7 +250,7 @@ h5 {
 
 h6 {
     font-size: 16px
-}
+} */
 
 .w3-serif {
     font-family: serif
@@ -268,7 +268,7 @@ h6 {
     font-family: monospace
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -277,7 +277,7 @@ h6 {
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
     margin: 10px 0
-}
+} */
 
 .w3-wide {
     letter-spacing: 4px
@@ -294,9 +294,9 @@ hr {
     height: auto
 }
 
-img {
+/* img {
     vertical-align: middle
-}
+} */
 
 a {
     color: inherit
