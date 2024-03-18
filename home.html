@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./contact.css">
     <script src="./index.js"></script>
+    <!-- This is contact form using email.js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "nTb2BgELxuw0P8xEv",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -23,43 +34,43 @@
         </div>
     </a>
 
-     <!-- First popup modal -->
-     <div id="popup-modal-1" class="popup-modal">
+    <!-- First popup modal -->
+    <div id="popup-modal-1" class="popup-modal">
         <div class="popup-content">
             <button class="close-btn">&times;</button>
             <h2 class="popup-title">ABOUT</h2>
             <div class="scrollable-content">
-               
+
                 <textarea id="textExample" rows="6" cols="60">Hi, this is Rey. This is a blank portfolio just to show that I'm using GitHub to host my website that I'll code later. Also, this animated text is a code snippet to test that JS works :) 
                 </textarea>
-              
-              
+
+
                 <script>
-                  function animateText(textArea) {
-                    let text = textArea.value;
-                    let to = text.length,
-                      from = 0;
-              
-                    animate({
-                      duration: 3000,
-                      timing: bounce,
-                      draw: function (progress) {
-                        let result = (to - from) * progress + from;
-                        textArea.value = text.slice(0, Math.ceil(result))
-                      }
-                    });
-                  }
-              
-              
-                  function bounce(timeFraction) {
-                    for (let a = 0, b = 1; 1; a += b, b /= 2) {
-                      if (timeFraction >= (7 - 4 * a) / 11) {
-                        return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
-                      }
+                    function animateText(textArea) {
+                        let text = textArea.value;
+                        let to = text.length,
+                            from = 0;
+
+                        animate({
+                            duration: 3000,
+                            timing: bounce,
+                            draw: function (progress) {
+                                let result = (to - from) * progress + from;
+                                textArea.value = text.slice(0, Math.ceil(result))
+                            }
+                        });
                     }
-                  }
+
+
+                    function bounce(timeFraction) {
+                        for (let a = 0, b = 1; 1; a += b, b /= 2) {
+                            if (timeFraction >= (7 - 4 * a) / 11) {
+                                return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+                            }
+                        }
+                    }
                 </script>
-              
+
                 <p>This is the content of Popup Modal 1.</p>
                 <p>It can contain any HTML content you want.</p>
                 <p>Feel free to customize it as needed.</p>
@@ -74,7 +85,7 @@
         </div>
     </div>
 
-    
+
 
     <!-- PROJECTS -->
 
@@ -96,8 +107,9 @@
                 <p>It can contain any HTML content you want.</p>
                 <p>Feel free to customize it as needed.</p>
                 <div class="wrapper">
-                    <div class="icons-text-window font"><a href="./project1.html"><img src="./src/logo-draft.PNG" alt="Icon">
-                        <span>Project Template</span></a>
+                    <div class="icons-text-window font"><a href="./project1.html"><img src="./src/logo-draft.PNG"
+                                alt="Icon">
+                            <span>Project Template</span></a>
                     </div>
 
                     <div class="icons-text-window font"><img src="./src/logo-draft.PNG" alt="Icon">
@@ -141,7 +153,7 @@
                     </div>
 
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -162,9 +174,22 @@
             <button class="close-btn">&times;</button>
             <h2 class="popup-title">CONTACT</h2>
             <div class="scrollable-content">
-                <p>This is the contact "Form?".</p>
-                <p>It can contain any HTML content you want.</p>
-                <p>Feel free to customize it as needed.</p>
+                <div id="wrapper">
+
+                    <form action="" id="contact_form_div">
+                        <div id="warning-message"></div>
+                        <p><input id="name" type="text" placeholder="Enter Name" required></p>
+                        <p><input id="email" type="email" placeholder="Enter Email" required></p>
+                        <p><textarea id="message" placeholder="Enter Message" required></textarea></p>
+                        <button onclick="sendMail()">Submit</button>
+                        <p>Note: This is not linked yet!</p>
+                    </form>
+
+                   
+
+
+
+                </div>
             </div>
         </div>
     </div>
@@ -192,7 +217,7 @@
         </div>
     </div>
 
-    
+
 
 
 
