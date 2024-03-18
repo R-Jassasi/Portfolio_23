@@ -3,103 +3,89 @@ Minimalistic Form.
 by: Matheus Marsiglio
 https://codepen.io/matmarsiglio/pen/pojoPR
 */
-
 /* Placeholder styles */
 ::placeholder {
     color: #585858;
-    /* Color of the placeholder text */
     font-size: 16px;
-    /* Font size of the placeholder text */
 }
 
 input:focus::placeholder,
 textarea:focus::placeholder {
     color: #000000;
-    /* Color of the placeholder text when input is focused */
 }
 
 input:hover::placeholder,
 textarea:hover::placeholder {
     color: #19b3a6;
-    /* Color of the placeholder text when input is hovered */
-    font-size: 16px;
-    /* Font size of the placeholder text when input is hovered */
 }
 
 input:hover:focus::placeholder,
 textarea:hover:focus::placeholder {
     color: #000000;
-    /* Color of the placeholder text when input is hovered and focused */
 }
 
 /* Form styles */
 #form {
-    width: 500px;
+    width: 100%; /* Set the form width to 100% for small screens */
+    max-width: 500px; /* Limit the maximum width of the form */
     margin: 50px auto 100px auto;
+    padding: 0 20px; /* Add padding for better spacing on small screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 input,
 textarea {
     font-size: 16px;
-    /* Font size of the input fields */
-    width: 470px;
-    /* Width of the input fields */
+    width: 100%;
     height: 50px;
     padding: 0px 15px;
-    /* Padding inside the input fields */
     background: transparent;
-    /* Background color of the input fields */
     outline: none;
-    /* Remove outline when input is focused */
     color: #7c7c7c;
-    /* Color of the text entered in the input fields */
     border: solid 1px black;
     border-bottom: none;
-    /* Border of the input fields */
     transition: all 0.3s ease-in-out;
-    /* Smooth transition for input field changes */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 input:hover,
 textarea:hover {
     background: #d7feff;
-    /* Background color when input is hovered */
     color: #272727;
-    /* Text color when input is hovered */
 }
 
 textarea {
     height: 110px;
-    /* Height of the textarea */
     max-height: 110px;
-    /* Maximum height of the textarea */
     padding: 15px;
-    /* Padding inside the textarea */
 }
 
 #submit {
-    width: 502px;
-    /* Width of the submit button */
+    width: 100%;
     height: 50px;
-    /* Height of the submit button */
-    margin-top: -5px;
-    /* Margin top for alignment */
     font-size: 16px;
     font-weight: bold;
-    /* Font size of the submit button text */
     color: black;
-    /* Text color of the submit button */
     background-color: white;
-    /* Background color of the submit button */
     cursor: pointer;
-    /* Cursor style for the submit button */
     border: solid 1px black;
-    /* Border of the submit button */
 }
 
 #submit:hover {
     color: white;
-    /* Text color when submit button is hovered */
     background-color: rgb(91, 170, 150);
-    /* Background color when submit button is hovered */
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #form {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input,
+    textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
 }

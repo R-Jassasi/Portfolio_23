@@ -32,6 +32,7 @@ h3,
 p,
 a,
 textarea,
+input,
 .font {
     font-family: 'Kollektif', sans-serif;
     /* Use the custom font */
@@ -313,4 +314,10 @@ footer .icon {
     .icons-text span {
       font-size: 16px; /* Adjust font size */
     }
+
+    .popup-modal {
+        min-width: 80%;
+        max-width: 90%;
+    }
+
   }
