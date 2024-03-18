@@ -175,19 +175,15 @@
             <h2 class="popup-title">CONTACT</h2>
             <div class="scrollable-content">
                 <div id="wrapper">
-
-                    <form action="" id="contact_form_div">
-                        <div id="warning-message"></div>
-                        <p><input id="name" type="text" placeholder="Enter Name" required></p>
-                        <p><input id="email" type="email" placeholder="Enter Email" required></p>
-                        <p><textarea id="message" placeholder="Enter Message" required></textarea></p>
-                        <button onclick="sendMail()">Submit</button>
-                        <p>Note: This is not linked yet!</p>
+                    <form id="form" class="topBefore">
+                        <h2 class="font-bold">Reach out!</h2>
+                        <!-- form by Matheus Marsiglio https://codepen.io/matmarsiglio/pen/pojoPR-->
+                        <div class="font" id="warning-message" style="margin-bottom: 16px;"></div>
+                        <input id="name" type="text" placeholder="Enter Name" required>
+                        <input id="email" type="email" placeholder="Enter Email" required>
+                        <textarea id="message" placeholder="Enter Message" required></textarea>
+                        <button id="submit" type="button" onclick="sendMail()">Submit</button>
                     </form>
-
-                   
-
-
 
                 </div>
             </div>

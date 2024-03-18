@@ -31,6 +31,7 @@ h2,
 h3,
 p,
 a,
+textarea,
 .font {
     font-family: 'Kollektif', sans-serif;
     /* Use the custom font */
@@ -42,7 +43,6 @@ textarea {
     display: block;
     border: none;
     color: #345678;
-    font-size: 110%;
 }
 
 body {

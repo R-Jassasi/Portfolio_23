@@ -1,185 +1,105 @@
+/*
+Minimalistic Form. 
+by: Matheus Marsiglio
+https://codepen.io/matmarsiglio/pen/pojoPR
+*/
 
-/* Responsive contact form */
-/* http://talkerscode.com/webtricks/create-responsive-contact-form-using-html-and-css.php */
-#wrapper
-{
- margin:0 auto;
- padding:0px;
- text-align:center;
- width:995px;	
-}
-#wrapper h1
-{
- margin-top:50px;
- font-size:45px;
- color:#424242;
-}
-#wrapper h1 p
-{
- font-size:18px;
-}
-#contact_form_div
-{
- width:330px;
- margin-left:320px;
- padding:10px;
- background-color:#424242;
-}
-#contact_form_div #contact_label
-{
- margin:15px;
- margin-bottom:30px;
- font-size:25px;
- font-weight:bold;
- color:black;
- text-decoration:none;
-}
-#contact_form_div input[type="text"]
-{
- width:230px;
- height:40px;
- border-radius:2px;
- font-size:17px;
- padding-left:5px;
- border:none;
-}
-#contact_form_div textarea
-{
- width:230px;
- height:70px;
- border-radius:2px;
- font-size:17px;
- padding: 5px;
-}
-#contact_form_div input[type="submit"]
-{
- width:230px;
- height:40px;
- border:none;
- border-radius:2px;
- font-size:17px;
- background-color:black;
- color: white;
- font-weight:bold;
+/* Placeholder styles */
+::placeholder {
+    color: #585858;
+    /* Color of the placeholder text */
+    font-size: 16px;
+    /* Font size of the placeholder text */
 }
 
-#contact_form_div input[type="submit"]:hover {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 3s ease infinite;
-    box-shadow: 2px 2px white;
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #000000;
+    /* Color of the placeholder text when input is focused */
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #19b3a6;
+    /* Color of the placeholder text when input is hovered */
+    font-size: 16px;
+    /* Font size of the placeholder text when input is hovered */
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+    color: #000000;
+    /* Color of the placeholder text when input is hovered and focused */
+}
+
+/* Form styles */
+#form {
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+
+input,
+textarea {
+    font-size: 16px;
+    /* Font size of the input fields */
+    width: 470px;
+    /* Width of the input fields */
+    height: 50px;
+    padding: 0px 15px;
+    /* Padding inside the input fields */
+    background: transparent;
+    /* Background color of the input fields */
+    outline: none;
+    /* Remove outline when input is focused */
+    color: #7c7c7c;
+    /* Color of the text entered in the input fields */
+    border: solid 1px black;
+    border-bottom: none;
+    /* Border of the input fields */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for input field changes */
+}
+
+input:hover,
+textarea:hover {
+    background: #d7feff;
+    /* Background color when input is hovered */
+    color: #272727;
+    /* Text color when input is hovered */
+}
+
+textarea {
+    height: 110px;
+    /* Height of the textarea */
+    max-height: 110px;
+    /* Maximum height of the textarea */
+    padding: 15px;
+    /* Padding inside the textarea */
+}
+
+#submit {
+    width: 502px;
+    /* Width of the submit button */
+    height: 50px;
+    /* Height of the submit button */
+    margin-top: -5px;
+    /* Margin top for alignment */
+    font-size: 16px;
+    font-weight: bold;
+    /* Font size of the submit button text */
     color: black;
-
+    /* Text color of the submit button */
+    background-color: white;
+    /* Background color of the submit button */
+    cursor: pointer;
+    /* Cursor style for the submit button */
+    border: solid 1px black;
+    /* Border of the submit button */
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-@media only screen and (max-width: 700px) {
-    #contact_form_div input[type="submit"]{
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	    background-size: 400% 400%;
-	    animation: gradient 3s ease infinite;
-        color: white;
-    }
-   
-}
-
-@media only screen and (min-width:700px) and (max-width:995px)
-{
- #wrapper
- {
-  width:100%;
- }
- #wrapper h1
- {
-  font-size:30px;
- }
- #contact_form_div
- {
-  width:50%;
-  margin-left:25%;
-  padding-left:0px;
-  padding-right:0px;
- }
- #contact_form_div input[type="text"]
- {
-  width:80%;
- }
- #contact_form_div textarea
- {
-  width:80%;
- }
- #contact_form_div input[type="submit"]
- {
-  width:80%;
- }
-}
-@media only screen and (min-width:400px) and (max-width:699px)
-{
- #wrapper
- {
-  width:100%;
- }
- #wrapper h1
- {
-  font-size:30px;
- }
- #contact_form_div
- {
-  width:60%;
-  margin-left:20%;
- }
- #contact_form_div input[type="text"]
- {
-  width:80%;
- }
- #contact_form_div textarea
- {
-  width:80%;
- }
- #contact_form_div input[type="submit"]
- {
-  width:80%;
- }
-}
-@media only screen and (min-width:100px) and (max-width:399px)
-{
- #wrapper
- {
-  width:100%;
- }
- #wrapper h1
- {
-  font-size:25px;
- }
- #contact_form_div
- {
-  width:90%;
-  margin-left:5%;
-  padding-left:0px;
-  padding-right:0px;
- }
- #contact_form_div input[type="text"]
- {
-  width:80%;
- }
- #contact_form_div textarea
- {
-  width:80%;
- }
- #contact_form_div input[type="submit"]
- {
-  width:80%;
- }
+#submit:hover {
+    color: white;
+    /* Text color when submit button is hovered */
+    background-color: rgb(91, 170, 150);
+    /* Background color when submit button is hovered */
 }
