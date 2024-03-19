@@ -56,21 +56,6 @@ body {
     /* Prevent scrollbars */
 }
 
-.button {
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    background-color: rgb(174, 255, 178);
-    cursor: pointer;
-    border: solid 1px black;
-}
-
-.button:hover {
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
 
 .content {
     flex: 1;
@@ -109,6 +94,23 @@ body {
     z-index: 0;
 }
 
+
+.button {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(174, 255, 178);
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
 /*______________ Desktop Icons______________*/
 .icons-text {
     display: flex;
@@ -141,11 +143,11 @@ body {
 }
 
 .icons-text:hover {
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(115, 221, 177, 0.445);
 }
 
 .icons-text-window:hover {
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(115, 221, 177, 0.445);
 }
 
 /* Style the icon */
@@ -277,6 +279,47 @@ body {
     color: white;
     /* Change color on hover if needed */
 }
+
+/*____________ top bar close ____________*/
+.sticky-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px 20px 8px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above the header image */
+
+}
+.close-btn2 {
+    position: fixed;
+    top: 0px; /* Adjust as needed to position the button vertically */
+    right: 0px; /* Adjust as needed to position the button horizontally */
+    padding: 9px 20px;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the button is above the scrollbar */
+}
+
+
+/* Adjust the hover effect if needed */
+.close-btn2:hover {
+    background-color: red;
+    color: white;
+}
+
+.title {
+    flex-grow: 1;
+    font-size: 30px;
+    color: white;
+}
+
 
 /* _______________ FOOTER ______________*/
 footer {

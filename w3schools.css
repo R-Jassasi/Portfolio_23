@@ -217,7 +217,7 @@ textarea {
 }
 
 /* End extract */
-/* html,
+
 body {
     font-family: Verdana, sans-serif;
     font-size: 15px;
@@ -225,11 +225,12 @@ body {
 }
 
 html {
-    overflow-x: hidden
+    overflow-x: hidden;
+    overflow-y: auto
 }
 
 h1 {
-    font-size: 36px
+    font-size: 36px;
 }
 
 h2 {
@@ -250,7 +251,7 @@ h5 {
 
 h6 {
     font-size: 16px
-} */
+} 
 
 .w3-serif {
     font-family: serif
