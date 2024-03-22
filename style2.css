@@ -40,6 +40,10 @@ input,
     text-decoration: none;
 }
 
+a:hover {
+    color: rgb(71, 134, 74);
+}
+
 textarea {
     display: block;
     border: none;
