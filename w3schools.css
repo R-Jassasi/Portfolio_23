@@ -550,7 +550,7 @@ a {
     padding-top: 100px;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 60px;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -560,12 +560,14 @@ a {
 
 .w3-modal-content {
     margin: auto;
-    background-color: #fff;
+    background-color: #ffffff;
     position: relative;
     padding: 0;
     outline: 0;
-    width: 600px
+    width: 1400px !important
 }
+
+
 
 .w3-bar {
     width: 100%;
@@ -864,13 +866,18 @@ a {
     .w3-auto {
         max-width: 95%
     }
+    
 }
 
-@media (max-width:600px) {
+@media (max-width:1400px) {
     .w3-modal-content {
         margin: 0 10px;
         width: auto !important
     }
+}
+
+@media (max-width:600px) {
+   
 
     .w3-modal {
         padding-top: 30px
@@ -1647,7 +1654,7 @@ a {
 .w3-black,
 .w3-hover-black:hover {
     color: #fff !important;
-    background-color: #000 !important
+    background-color: #000000ad !important
 }
 
 .w3-grey,

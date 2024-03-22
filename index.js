@@ -134,6 +134,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+//expanding images when clicked - w3schools
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
 //email contact form submits from email.js https://www.youtube.com/watch?v=dgcYOm8n8ME&ab_channel=CodewithVoran 
 //with a condition to fill all fields from chatGPT
 function sendMail() {
