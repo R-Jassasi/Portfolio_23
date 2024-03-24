@@ -443,6 +443,62 @@ footer .icon {
 
 }
 
+/*________weather widget ChatGPT ______________*/
+.widget {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 220px;
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widget-header {
+    background-color: #82f47352;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #999;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.widget-body {
+    padding: 15px;
+}
+
+.weather-icon {
+    text-align: center;
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-details {
+    text-align: center;
+}
+
+.temperature {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.description {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.location {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
 
 
 
@@ -494,6 +550,10 @@ footer .icon {
     .popup-modal {
         min-width: 80%;
         max-width: 90%;
+    }
+
+    .widget{
+        display: none;
     }
 
 }
