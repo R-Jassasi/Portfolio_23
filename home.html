@@ -43,9 +43,9 @@
             <h2 class="popup-title">ABOUT</h2>
             <div class="scrollable-content">
 
-                <textarea id="textExample" rows="6" cols="60">Hi, this is Rey. This is a blank portfolio just to show that I'm using GitHub to host my website that I'll code later. Also, this animated text is a code snippet to test that JS works :) 
+                <textarea id="textExample" rows="6" cols="60">Hey, this is Rey (Rahil)! A keen eye for details! It started with playing with cameras, writing stories and making lots of PowerPoints as a kid :D Then evolved into developing websites, audio-visual designs, and even 3D worlds. Much of my inspiration comes from my long walks and talks with people! 💻📸🎞️🎮🎨☕️🌼🌳🐱🧠✨
                 </textarea>
-
+                <button class="button" onclick="animateText(textExample)">RUN THE TYPING!</button>
 
                 <script>
                     function animateText(textArea) {
@@ -73,14 +73,25 @@
                     }
                 </script>
 
-                <p>This is the content of Popup Modal 1.</p>
-            
+                <div style="margin-bottom: 20px;"></div>
+
                 <!-- Hovering image change -->
-                <div class="image-container" data-hover-src="./src/Raheel.jpg">
+                <div style="text-align: center;">
+                    <h4>Experienced in graphic design, creative coding, and web development. Passionate about crafting
+                        3D
+                        experiences and diving into the world of games. I thrive on creativity, weaving tales through
+                        various mediums and always seeking fresh ways to express myself. Let's create wonderful things
+                        together!</h4>
+
+                    <h1>↓↓↓</h1>
+                    <h2>Hover Me!</h2>
+                </div>
+
+                <div class="image-container" data-hover-src="./src/Raheel.jpg"
+                    style="width: 80%; margin-left: auto; margin-right: auto;">
                     <img src="./src/self-portrait-unfinished.jpeg" alt="Original Image" class="w3-image" width="800px"
                         height="auto">
                 </div>
-                <p>Hover Me ;)</p>
             </div>
 
         </div>
@@ -106,7 +117,7 @@
             <div class="scrollable-content">
                 <div class="wrapper">
                     <div class="icons-text-window font"><a href=""><img src="./src/logo-draft.PNG" alt="Icon">
-                        <span>Piano Mapping III</span></a>
+                            <span>Piano Mapping III</span></a>
                     </div>
 
                     <div class="icons-text-window font"><a href="./cafinto.html"><img
@@ -149,7 +160,8 @@
                             <span>Global Game Jam</span></a>
                     </div>
 
-                    <div class="icons-text-window font"><a href="./sss.html"><img src="./src/sss/sss-logo.jpg" alt="Icon">
+                    <div class="icons-text-window font"><a href="./sss.html"><img src="./src/sss/sss-logo.jpg"
+                                alt="Icon">
                             <span>SSS</span></a>
                     </div>
 
@@ -166,19 +178,19 @@
                     </div>
 
                     <div class="icons-text-window font"><a href=""><img src="./src/logo-draft.PNG" alt="Icon">
-                        <span>ONEIROS?</span></a>
+                            <span>ONEIROS?</span></a>
                     </div>
 
                     <div class="icons-text-window font"><a href=""><img src="./src/logo-draft.PNG" alt="Icon">
-                        <span>FIRST CODED WEB?</span></a>
+                            <span>FIRST CODED WEB?</span></a>
                     </div>
 
                     <div class="icons-text-window font"><a href=""><img src="./src/logo-draft.PNG" alt="Icon">
-                        <span>sketches?</span></a>
+                            <span>sketches?</span></a>
                     </div>
 
                     <div class="icons-text-window font"><a href=""><img src="./src/logo-draft.PNG" alt="Icon">
-                        <span>Desert Game - coming soon</span></a>
+                            <span>Desert Game - coming soon</span></a>
                     </div>
 
 
@@ -278,7 +290,11 @@
 
 
         <span style="margin-right: 10px;"></span>
-        <div class="item font" id="clock"></div> <!-- Container to display the time -->
+        <div class="tooltip">
+            <div class="item font" id="clock"></div> <!-- Container to display the time -->
+            <span class="tooltiptext">coffee o'clock?</span>
+
+        </div>
     </div>
 
 </footer>

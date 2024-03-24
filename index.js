@@ -109,6 +109,7 @@ setInterval(updateClock, 1000);
 
 
 // JavaScript to handle popup functionality - from chatGPT
+// JavaScript to handle popup functionality
 document.addEventListener('DOMContentLoaded', function () {
   // Get all popup triggers
   const popupTriggers = document.querySelectorAll('.popup-trigger');
@@ -121,6 +122,12 @@ document.addEventListener('DOMContentLoaded', function () {
       // Get the target popup modal ID
       const targetId = this.getAttribute('data-target');
       const targetModal = document.getElementById(targetId);
+
+      // Close any open modals
+      const openModals = document.querySelectorAll('.popup-modal');
+      openModals.forEach(function (modal) {
+        modal.style.display = 'none';
+      });
 
       // Show the target popup modal
       targetModal.style.display = 'block';
