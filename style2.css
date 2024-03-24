@@ -387,6 +387,10 @@ body {
   .image-container[data-hover-src="./src/cube/face.jpg"]:hover::after {
     background-image: url('./src/cube/face.jpg');
   }
+  .image-container[data-hover-src="./src/Raheel.jpg"]:hover::after {
+    background-image: url('./src/Raheel.jpg');
+  }
+
 
 
 /* _______________ FOOTER ______________*/
