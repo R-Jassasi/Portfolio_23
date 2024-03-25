@@ -568,7 +568,7 @@ a {
     outline: 0;
     height: 100vh;
     width: auto;
-    transition: transform 0.1s ease; /* Add smooth transition for zoom effect */
+    transition: transform 1s ease; /* Add smooth transition for zoom effect */
 
 }
 
@@ -587,6 +587,7 @@ a {
 }
 
 .w3-modal-content img:hover {
+    margin: auto;
     transform: scale(1.5); /* Increase scale on hover for zoom effect */
 }
 
