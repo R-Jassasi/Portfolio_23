@@ -109,7 +109,6 @@ setInterval(updateClock, 1000);
 
 
 // JavaScript to handle popup functionality - from chatGPT
-// JavaScript to handle popup functionality
 document.addEventListener('DOMContentLoaded', function () {
   // Get all popup triggers
   const popupTriggers = document.querySelectorAll('.popup-trigger');

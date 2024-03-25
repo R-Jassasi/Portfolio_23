@@ -292,7 +292,7 @@ hr {
 
 .w3-image {
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 /* img {
@@ -560,11 +560,34 @@ a {
 
 .w3-modal-content {
     margin: auto;
+    cursor:pointer; /* Add zoom cursor */
+
     background-color: #ffffff;
     position: relative;
     padding: 0;
     outline: 0;
-    width: 1400px !important
+    height: 100vh;
+    width: auto;
+    transition: transform 0.1s ease; /* Add smooth transition for zoom effect */
+
+}
+
+.w3-modal-content img {
+    margin-top: auto;
+    cursor: zoom-out; /* Add zoom cursor */
+    max-width: 100%; /* Ensure image doesn't exceed viewport width */
+    max-height: 100%; /* Ensure image doesn't exceed viewport height */
+    object-fit: contain; /* Preserve aspect ratio of the image */
+    transition: transform 0.3s ease; /* Add smooth transition for zoom effect */
+
+}
+.w3-modal-content:hover {
+    transform: translateY(150px); /* Translate slightly to the bottom on hover */
+
+}
+
+.w3-modal-content img:hover {
+    transform: scale(1.5); /* Increase scale on hover for zoom effect */
 }
 
 

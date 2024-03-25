@@ -42,7 +42,7 @@ input,
     font-weight: normal;
     text-decoration: none;
     line-height: 1.5;
-    
+
 }
 
 a:hover {
@@ -360,43 +360,55 @@ body {
 
 /*_____________Image change on hover ChatGPT_______________*/
 .image-container {
-    position: relative; /* Positioning context for the overlay */
-    width: 300px; /* Set width of the container */
-    height: auto; /* Set height of the container */
-   
-  }
-  
-  .image-container img {
-    display: block; /* Make image a block element */
-    width: 100%; /* Ensure image fills container width */
-    transition: opacity 0.5s ease; /* Add transition effect */
-  }
-  /* Change the image source on hover */
-  .image-container:hover img {
-    opacity: 0; /* Hide the original image on hover */
-  }
-  
+    position: relative;
+    /* Positioning context for the overlay */
+    width: 300px;
+    /* Set width of the container */
+    height: auto;
+    /* Set height of the container */
+
+}
+
+.image-container img {
+    display: block;
+    /* Make image a block element */
+    width: 100%;
+    /* Ensure image fills container width */
+    transition: opacity 0.5s ease;
+    /* Add transition effect */
+}
+
+/* Change the image source on hover */
+.image-container:hover img {
+    opacity: 0;
+    /* Hide the original image on hover */
+}
+
 /* Show the alternative image on hover */
 .image-container:hover::after {
-    content: ''; /* Create pseudo-element */
-    position: absolute; /* Position absolutely */
+    content: '';
+    /* Create pseudo-element */
+    position: absolute;
+    /* Position absolutely */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(''); /* Initially empty */
+    background-image: url('');
+    /* Initially empty */
     background-size: cover;
     opacity: 1;
     z-index: -1;
-  }
-  
-  /* Define different background images based on the data-hover-src attribute */
-  .image-container[data-hover-src="./src/cube/face.jpg"]:hover::after {
+}
+
+/* Define different background images based on the data-hover-src attribute */
+.image-container[data-hover-src="./src/cube/face.jpg"]:hover::after {
     background-image: url('./src/cube/face.jpg');
-  }
-  .image-container[data-hover-src="./src/Raheel.jpg"]:hover::after {
+}
+
+.image-container[data-hover-src="./src/Raheel.jpg"]:hover::after {
     background-image: url('./src/Raheel.jpg');
-  }
+}
 
 
 
@@ -453,7 +465,8 @@ footer .icon {
     -webkit-backdrop-filter: blur(4px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.342);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -497,6 +510,18 @@ footer .icon {
 .location {
     margin: 5px 0;
     font-size: 16px;
+}
+
+.zoom {
+    cursor: zoom-in;
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -552,7 +577,7 @@ footer .icon {
         max-width: 90%;
     }
 
-    .widget{
+    .widget {
         display: none;
     }
 
