@@ -460,10 +460,10 @@ footer .icon {
     position: fixed;
     top: 50px;
     left: 50px;
-    width: 220px;
+    width: 250px;
     backdrop-filter: blur(4px) saturate(200%);
     -webkit-backdrop-filter: blur(4px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.342);
+    background-color: rgba(177, 177, 177, 0.548);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     border: 1px solid #ccc;
@@ -473,7 +473,7 @@ footer .icon {
 
 .widget-header {
     background-color: #82f47352;
-    color: #333;
+    color: rgb(53, 53, 53);
     padding: 10px;
     border-bottom: 1px solid #999;
     border-radius: 5px 5px 0 0;
@@ -482,6 +482,7 @@ footer .icon {
 
 .widget-body {
     padding: 15px;
+    color: #000000;
 }
 
 .weather-icon {
@@ -514,7 +515,7 @@ footer .icon {
 
 .zoom {
     cursor: zoom-in;
-    transition: transform .2s;
+    transition: transform .1s;
     /* Animation */
     margin: 0 auto;
 }
