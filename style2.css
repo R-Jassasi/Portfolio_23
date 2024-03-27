@@ -462,7 +462,7 @@ footer .icon {
     height: 120px; /* Adjust the height of the logo */
   }
   
-  .logo-container::before {
+.logo-container::before {
     content: '';
     position: absolute;
     top: -60px;
@@ -473,15 +473,42 @@ footer .icon {
     background-position: center; /* Center the background image */
     z-index: -1; /* Ensure the background image stays behind the logo */
     animation: changeBackground 10s infinite; /* Adjust the duration as needed */
-  }
+}
   
-  @keyframes changeBackground {
-    0% { background-image: url('./src/academeal/persona.png'); } /* Start with the first image */
+@keyframes changeBackground {
+    0% { background-image: url('https://images.unsplash.com/photo-1481819613568-3701cbc70156?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); } /* Start with the first image */
     25% { background-image: url('./src/cube/front_better.jpg'); } /* Switch to the second image */
     50% { background-image: url('./src/firstcodedweb/BILATERAL.png'); } /* Switch to the third image */
     75% { background-image: url('./src/firstcodedweb/AXIAL.png'); } /* Switch to the fourth image */
-    100% { background-image: url('./src/academeal/persona.png'); } /* Switch back to the first image */
-  }
+    100% { background-image: url('https://images.unsplash.com/photo-1481819613568-3701cbc70156?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); } /* Switch back to the first image */
+}
+
+.gradient-change{
+    position: relative;
+    width: 120px; 
+    height: 120px;
+    top: -40px;
+    left: -135px;
+    background-color: black;
+    background: linear-gradient(-90deg, #FEE148, #9AB796, #7bb3a0, #899BFD, #c3a6ee, #faa1e4);
+	background-size: 300% 300%;
+    z-index: -1;
+	animation: change 10s linear infinite;
+}
+
+
+/* https://www.youtube.com/watch?v=woVuUbDOeMk&ab_channel=Codegrid */
+@keyframes change {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
   
 
 /*________weather widget ChatGPT ______________*/
