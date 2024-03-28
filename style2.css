@@ -581,6 +581,10 @@ footer .icon {
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.logo-responsive{
+    width: 150px;
+    margin-top: -80px;
+}
 
 
 
@@ -610,6 +614,21 @@ footer .icon {
 
 /* Adjust sizes and positions for phone view */
 @media screen and (max-width: 480px) {
+    .logo-responsive {
+        width: 100px;
+        margin-right: 20px;
+    }
+    .gradient-change{
+        width: 80px;
+        height: 80px;
+        margin-left: 25px;
+    }
+
+    #clock{
+        display: none;
+    }
+
+
     .icons-text {
         right: 20px;
         /* Adjust position from the right edge */
