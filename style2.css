@@ -597,6 +597,11 @@ footer .icon {
 
 /* Adjust sizes and positions for tablet view */
 @media screen and (max-width: 768px) {
+    .cv{
+        width: 100%;
+        height: auto;
+    }
+
     .icons-text {
         right: 10px;
         /* Adjust position from the right edge */
