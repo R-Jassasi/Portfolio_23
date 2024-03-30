@@ -4,3 +4,5 @@
  Resources:
  icons: https://www.iconfinder.com/
  Cursor: https://www.cursor.cc/ Orange Cat by Garfi3ld (modified)
+
+ theme: jekyll-theme-THEME-NAME
