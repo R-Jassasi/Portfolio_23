@@ -586,6 +586,10 @@ footer .icon {
     margin-top: -80px;
 }
 
+.cv{
+    width: 1000px;
+}
+
 
 
 /*______________RESPONSiVENESS SETTINGS______________*/
@@ -612,8 +616,21 @@ footer .icon {
     }
 }
 
+
 /* Adjust sizes and positions for phone view */
 @media screen and (max-width: 480px) {
+    iframe{
+        width: 90%;
+        height: 400px;
+    }
+
+    .cv{
+        width: 100%;
+        height: auto;
+    }
+
+    
+
     .logo-responsive {
         width: 100px;
         margin-right: 20px;
